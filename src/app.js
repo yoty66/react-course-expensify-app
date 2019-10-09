@@ -9,10 +9,10 @@ import 'react-dates/lib/css/_datepicker.css';
 import {addExpense} from "./actions/expenses";
 
 const store =configureStore ();
-console.log(store.getState());
+// console.log(store.getState());
 
-store.dispatch(addExpense({description: 'Water bill' , createdAt: 3 , amount: 300 }));
-store.dispatch(addExpense({description: 'REnt' , createdAt: 3 , amount: 3000000 }));
+// store.dispatch(addExpense({description: 'Water bill' , createdAt: 3 , amount: 300 }));
+// store.dispatch(addExpense({description: 'REnt' , createdAt: 3 , amount: 3000000 }));
 
 
 
