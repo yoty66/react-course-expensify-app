@@ -7,11 +7,12 @@ import './styles/styles.scss';
 import 'normalize.css/normalize.css'
 import 'react-dates/lib/css/_datepicker.css';
 import {addExpense} from "./actions/expenses";
+import moment from 'moment';
 
 const store =configureStore ();
 // console.log(store.getState());
 
-// store.dispatch(addExpense({description: 'Water bill' , createdAt: 3 , amount: 300 }));
+store.dispatch(addExpense({description: 'Slovenia Croatia' , createdAt: moment().valueOf() , amount: 1000000000000 , note:'מאמי מאמ את חייבת לי את החיים שלך'}));
 // store.dispatch(addExpense({description: 'REnt' , createdAt: 3 , amount: 3000000 }));
 
 
