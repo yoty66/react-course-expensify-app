@@ -1,30 +1,30 @@
 Arguments: 
-  /Users/Avraham/.nvm/versions/node/v10.13.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add rect-test-renderer@16.0.0
+  /Users/Avraham/.nvm/versions/node/v8.14.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add extract-text-webpack-plugin
 
 PATH: 
-  /Users/Avraham/.nvm/versions/node/v10.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/Cellar/gradle-4.10/bin
+  /Users/Avraham/.nvm/versions/node/v8.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/Cellar/gradle-4.10/bin
 
 Yarn version: 
   1.17.3
 
 Node version: 
-  10.13.0
+  8.14.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: http://wm-npm.mobimate.com/rect-test-renderer: not_found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66830:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
-      at Request.emit (events.js:182:13)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141436:10)
-      at Request.emit (events.js:182:13)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141358:12)
-      at Object.onceWrapper (events.js:273:13)
-      at IncomingMessage.emit (events.js:187:15)
-      at endReadableNT (_stream_readable.js:1094:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: wm-npm.mobimate.com/extract-text-webpack-plugin: Invalid URI "wm-npm.mobimate.com/extract-text-webpack-plugin"
+      at Request.module.exports.Request.init (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140552:31)
+      at new Request (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140406:8)
+      at request (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:137312:10)
+      at RequestManager.execute (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66882:15)
+      at RequestManager.shiftQueue (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66920:10)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66599:13
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:5296:28)
+      at RequestManager.request (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66597:19)
+      at NpmRegistry.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:31694:42)
 
 npm manifest: 
   {
@@ -35,9 +35,10 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "serve": "live-server public/",
-      "build": "webpack ",
+      "build:prod": "webpack -p --env=production",
+      "build": "webpack",
       "dev-server": "webpack-dev-server",
-      "test": "jest --watch"
+      "test": "jest --config=jest.config.json --watch"
     },
     "dependencies": {
       "babel-cli": "6.24.1",
@@ -48,11 +49,16 @@ npm manifest:
       "babel-preset-env": "1.5.2",
       "babel-preset-react": "6.24.1",
       "css-loader": "0.28.4",
+      "enzyme": "3.0.0",
+      "enzyme-adapter-react-16": "1.0.0",
+      "enzyme-to-json": "3.0.1",
+      "extract-text-webpack-plugin": "^3.0.2",
       "jest": "20.0.4",
       "live-server": "^1.2.0",
       "moment": "2.18.1",
       "node-sass": "4.5.3",
       "normalize.css": "7.0.0",
+      "raf": "3.3.2",
       "react": "15.6.1",
       "react-addons-shallow-compare": "15.6.0",
       "react-dates": "12.7.0",
@@ -60,6 +66,7 @@ npm manifest:
       "react-modal": "2.2.2",
       "react-redux": "5.0.5",
       "react-router-dom": "^5.0.1",
+      "react-test-renderer": "16.0.0",
       "redux": "^4.0.4",
       "sass-loader": "6.0.6",
       "style-loader": "0.18.2",
@@ -84,6 +91,11 @@ Lockfile:
     integrity sha1-dPulbTXvvspEQJHHhQzNSU/S8TI=
     dependencies:
       regenerator-runtime "^0.13.2"
+  
+  "@types/node@*":
+    version "12.7.5"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/@types/node/-/node-12.7.5.tgz#e19436e7f8e9b4601005d73673b6dc4784ffcc2f"
+    integrity sha1-4ZQ25/jptGAQBdc2c7bcR4T/zC8=
   
   abab@^1.0.3:
     version "1.0.4"
@@ -122,7 +134,7 @@ Lockfile:
     version "5.1.1"
     resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.1.tgz#53fe161111f912ab999ee887a90a0bc52822fd75"
   
-  airbnb-prop-types@^2.8.1:
+  airbnb-prop-types@^2.13.2, airbnb-prop-types@^2.8.1:
     version "2.15.0"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/airbnb-prop-types/-/airbnb-prop-types-2.15.0.tgz#5287820043af1eb469f5b0af0d6f70da6c52aaef"
     integrity sha1-UoeCAEOvHrRp9bCvDW9w2mxSqu8=
@@ -346,7 +358,7 @@ Lockfile:
     dependencies:
       lodash "^4.14.0"
   
-  async@^2.1.4:
+  async@^2.1.4, async@^2.4.1:
     version "2.6.3"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
     integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
@@ -1165,6 +1177,11 @@ Lockfile:
       multicast-dns "^6.0.1"
       multicast-dns-service-types "^1.1.0"
   
+  boolbase@~1.0.0:
+    version "1.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/boolbase/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
+    integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+  
   boom@2.x.x:
     version "2.10.1"
     resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -1374,6 +1391,18 @@ Lockfile:
       escape-string-regexp "^1.0.5"
       supports-color "^4.0.0"
   
+  cheerio@^1.0.0-rc.2:
+    version "1.0.0-rc.3"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/cheerio/-/cheerio-1.0.0-rc.3.tgz#094636d425b2e9c0f4eb91a46c05630c9a1a8bf6"
+    integrity sha1-CUY21CWy6cD065GkbAVjDJoai/Y=
+    dependencies:
+      css-select "~1.2.0"
+      dom-serializer "~0.1.1"
+      entities "~1.1.1"
+      htmlparser2 "^3.9.1"
+      lodash "^4.15.0"
+      parse5 "^3.0.1"
+  
   chokidar@^1.4.3, chokidar@^1.6.0, chokidar@^1.6.1:
     version "1.7.0"
     resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
@@ -1509,14 +1538,14 @@ Lockfile:
     dependencies:
       delayed-stream "~1.0.0"
   
-  commander@^2.8.1:
-    version "2.11.0"
-    resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
-  
-  commander@~2.20.0:
+  commander@^2.19.0, commander@~2.20.0:
     version "2.20.0"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
     integrity sha1-1YuytcHuj4ew00ACfp6U4iLFpCI=
+  
+  commander@^2.8.1:
+    version "2.11.0"
+    resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
   
   commondir@^1.0.1:
     version "1.0.1"
@@ -1727,6 +1756,16 @@ Lockfile:
       postcss-value-parser "^3.3.0"
       source-list-map "^0.1.7"
   
+  css-select@~1.2.0:
+    version "1.2.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/css-select/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
+    integrity sha1-KzoRBTnFNV8c2NMUYj6HCxIeyFg=
+    dependencies:
+      boolbase "~1.0.0"
+      css-what "2.1"
+      domutils "1.5.1"
+      nth-check "~1.0.1"
+  
   css-selector-tokenizer@^0.7.0:
     version "0.7.0"
     resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.7.0.tgz#e6988474ae8c953477bf5e7efecfceccd9cf4c86"
@@ -1734,6 +1773,11 @@ Lockfile:
       cssesc "^0.1.0"
       fastparse "^1.1.1"
       regexpu-core "^1.0.0"
+  
+  css-what@2.1:
+    version "2.1.3"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/css-what/-/css-what-2.1.3.tgz#a6d7604573365fe74686c3f311c56513d88285f2"
+    integrity sha1-ptdgRXM2X+dGhsPzEcVlE9iChfI=
   
   cssesc@^0.1.0:
     version "0.1.0"
@@ -1941,6 +1985,11 @@ Lockfile:
       miller-rabin "^4.0.0"
       randombytes "^2.0.0"
   
+  discontinuous-range@1.0.0:
+    version "1.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/discontinuous-range/discontinuous-range-1.0.0.tgz#e38331f0844bba49b9a9cb71c771585aab1bc65a"
+    integrity sha1-44Mx8IRLukm5qctxx3FYWqsbxlo=
+  
   dns-equal@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
@@ -1958,9 +2007,58 @@ Lockfile:
     dependencies:
       buffer-indexof "^1.0.0"
   
+  dom-serializer@0:
+    version "0.2.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/dom-serializer/-/dom-serializer-0.2.1.tgz#13650c850daffea35d8b626a4cfc4d3a17643fdb"
+    integrity sha1-E2UMhQ2v/qNdi2JqTPxNOhdkP9s=
+    dependencies:
+      domelementtype "^2.0.1"
+      entities "^2.0.0"
+  
+  dom-serializer@~0.1.1:
+    version "0.1.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/dom-serializer/-/dom-serializer-0.1.1.tgz#1ec4059e284babed36eec2941d4a970a189ce7c0"
+    integrity sha1-HsQFnihLq+027sKUHUqXChic58A=
+    dependencies:
+      domelementtype "^1.3.0"
+      entities "^1.1.1"
+  
   domain-browser@^1.1.1:
     version "1.1.7"
     resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
+  
+  domelementtype@1, domelementtype@^1.3.0, domelementtype@^1.3.1:
+    version "1.3.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/domelementtype/-/domelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
+    integrity sha1-0EjESzew0Qp/Kj1f7j9DM9eQSB8=
+  
+  domelementtype@^2.0.1:
+    version "2.0.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/domelementtype/-/domelementtype-2.0.1.tgz#1f8bdfe91f5a78063274e803b4bdcedf6e94f94d"
+    integrity sha1-H4vf6R9aeAYydOgDtL3O326U+U0=
+  
+  domhandler@^2.3.0:
+    version "2.4.2"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/domhandler/-/domhandler-2.4.2.tgz#8805097e933d65e85546f726d60f5eb88b44f803"
+    integrity sha1-iAUJfpM9ZehVRvcm1g9euItE+AM=
+    dependencies:
+      domelementtype "1"
+  
+  domutils@1.5.1:
+    version "1.5.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/domutils/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
+    integrity sha1-3NhIiib1Y9YQeeSMn3t+Mjc2gs8=
+    dependencies:
+      dom-serializer "0"
+      domelementtype "1"
+  
+  domutils@^1.5.1:
+    version "1.7.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
+    integrity sha1-Vuo0HoNOBuZ0ivehyyXaZ+qfjCo=
+    dependencies:
+      dom-serializer "0"
+      domelementtype "1"
   
   duplexer@~0.1.1:
     version "0.1.1"
@@ -2015,6 +2113,62 @@ Lockfile:
       object-assign "^4.0.1"
       tapable "^0.2.5"
   
+  entities@^1.1.1, entities@~1.1.1:
+    version "1.1.2"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
+    integrity sha1-vfpzUplmTfr9NFKe1PhSKidf6lY=
+  
+  entities@^2.0.0:
+    version "2.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
+    integrity sha1-aNYITKsbB5dnVA2A5Wo5tCPkq/Q=
+  
+  enzyme-adapter-react-16@1.0.0:
+    version "1.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.0.0.tgz#e7edd5536743818dcbef336d40d7da59b3a7db8e"
+    integrity sha1-5+3VU2dDgY3L7zNtQNfaWbOn244=
+    dependencies:
+      enzyme-adapter-utils "^1.0.0"
+      lodash "^4.17.4"
+      object.assign "^4.0.4"
+      object.values "^1.0.4"
+      prop-types "^15.5.10"
+  
+  enzyme-adapter-utils@^1.0.0:
+    version "1.12.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/enzyme-adapter-utils/-/enzyme-adapter-utils-1.12.0.tgz#96e3730d76b872f593e54ce1c51fa3a451422d93"
+    integrity sha1-luNzDXa4cvWT5UzhxR+jpFFCLZM=
+    dependencies:
+      airbnb-prop-types "^2.13.2"
+      function.prototype.name "^1.1.0"
+      object.assign "^4.1.0"
+      object.fromentries "^2.0.0"
+      prop-types "^15.7.2"
+      semver "^5.6.0"
+  
+  enzyme-to-json@3.0.1:
+    version "3.0.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/enzyme-to-json/-/enzyme-to-json-3.0.1.tgz#16468e2ff3e4db817d84f9df38760abbc322273d"
+    integrity sha1-FkaOL/Pk24F9hPnfOHYKu8MiJz0=
+    dependencies:
+      lodash "^4.17.4"
+  
+  enzyme@3.0.0:
+    version "3.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/enzyme/-/enzyme-3.0.0.tgz#94ce364254dc654c4e619b25eecc644bf6481de7"
+    integrity sha1-lM42QlTcZUxOYZsl7sxkS/ZIHec=
+    dependencies:
+      cheerio "^1.0.0-rc.2"
+      function.prototype.name "^1.0.3"
+      is-subset "^0.1.1"
+      lodash "^4.17.4"
+      object-is "^1.0.1"
+      object.assign "^4.0.4"
+      object.entries "^1.0.4"
+      object.values "^1.0.4"
+      raf "^3.3.2"
+      rst-selector-parser "^2.2.1"
+  
   errno@^0.1.3:
     version "0.1.4"
     resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.4.tgz#b896e23a9e5e8ba33871fc996abd3635fc9a1c7d"
@@ -2033,6 +2187,22 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
     dependencies:
       is-arrayish "^0.2.1"
+  
+  es-abstract@^1.11.0:
+    version "1.14.2"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/es-abstract/-/es-abstract-1.14.2.tgz#7ce108fad83068c8783c3cdf62e504e084d8c497"
+    integrity sha1-fOEI+tgwaMh4PDzfYuUE4ITYxJc=
+    dependencies:
+      es-to-primitive "^1.2.0"
+      function-bind "^1.1.1"
+      has "^1.0.3"
+      has-symbols "^1.0.0"
+      is-callable "^1.1.4"
+      is-regex "^1.0.4"
+      object-inspect "^1.6.0"
+      object-keys "^1.1.1"
+      string.prototype.trimleft "^2.0.0"
+      string.prototype.trimright "^2.0.0"
   
   es-abstract@^1.12.0, es-abstract@^1.13.0:
     version "1.13.0"
@@ -2279,6 +2449,16 @@ Lockfile:
     dependencies:
       is-extglob "^1.0.0"
   
+  extract-text-webpack-plugin@^3.0.2:
+    version "3.0.2"
+    resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.2.tgz#5f043eaa02f9750a9258b78c0a6e0dc1408fb2f7"
+    integrity sha512-bt/LZ4m5Rqt/Crl2HiKuAl/oqg0psx1tsTLkvWbJen1CtD+fftkZhMaQ9HOtY2gWsl2Wq+sABmMVi9z3DhKWQQ==
+    dependencies:
+      async "^2.4.1"
+      loader-utils "^1.1.0"
+      schema-utils "^0.3.0"
+      webpack-sources "^1.0.1"
+  
   extsprintf@1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
@@ -2322,7 +2502,7 @@ Lockfile:
     dependencies:
       bser "^2.0.0"
   
-  fbjs@^0.8.4:
+  fbjs@^0.8.16, fbjs@^0.8.4:
     version "0.8.17"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
     integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -2501,7 +2681,7 @@ Lockfile:
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
     integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
   
-  function.prototype.name@^1.1.1:
+  function.prototype.name@^1.0.3, function.prototype.name@^1.1.0, function.prototype.name@^1.1.1:
     version "1.1.1"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/function.prototype.name/-/function.prototype.name-1.1.1.tgz#6d252350803085abc2ad423d4fe3be2f9cbda392"
     integrity sha1-bSUjUIAwhavCrUI9T+O+L5y9o5I=
@@ -2780,6 +2960,18 @@ Lockfile:
   html-entities@^1.2.0:
     version "1.2.1"
     resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
+  
+  htmlparser2@^3.9.1:
+    version "3.10.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/htmlparser2/-/htmlparser2-3.10.1.tgz#bd679dc3f59897b6a34bb10749c855bb53a9392f"
+    integrity sha1-vWedw/WYl7ajS7EHSchVu1OpOS8=
+    dependencies:
+      domelementtype "^1.3.1"
+      domhandler "^2.3.0"
+      domutils "^1.5.1"
+      entities "^1.1.1"
+      inherits "^2.0.1"
+      readable-stream "^3.1.1"
   
   http-auth@3.1.x:
     version "3.1.3"
@@ -3071,6 +3263,11 @@ Lockfile:
   is-stream@^1.0.1:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+  
+  is-subset@^0.1.1:
+    version "0.1.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/is-subset/is-subset-0.1.1.tgz#8a59117d932de1de00f245fcdd39ce43f1e939a6"
+    integrity sha1-ilkRfZMt4d4A8kX83TnOQ/HpOaY=
   
   is-svg@^2.0.0:
     version "2.1.0"
@@ -3660,6 +3857,11 @@ Lockfile:
     version "4.5.0"
     resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   
+  lodash.flattendeep@^4.4.0:
+    version "4.4.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
+    integrity sha1-+wMJF/hqMTTlvJvsDWngAT3f7bI=
+  
   lodash.memoize@^4.1.2:
     version "4.1.2"
     resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -3680,7 +3882,7 @@ Lockfile:
     version "4.17.4"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
   
-  lodash@^4.1.1, lodash@^4.17.14, lodash@^4.17.4:
+  lodash@^4.1.1, lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.4:
     version "4.17.15"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
     integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
@@ -3882,6 +4084,11 @@ Lockfile:
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
     integrity sha1-DQVdU/UFKqZTyfbraLtdEr9cK1s=
   
+  moo@^0.4.3:
+    version "0.4.3"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/moo/-/moo-0.4.3.tgz#3f847a26f31cf625a956a87f2b10fbc013bfd10e"
+    integrity sha1-P4R6JvMc9iWpVqh/KxD7wBO/0Q4=
+  
   morgan@^1.6.1:
     version "1.8.2"
     resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.8.2.tgz#784ac7734e4a453a9c6e6e8680a9329275c8b687"
@@ -3924,6 +4131,17 @@ Lockfile:
     version "1.4.0"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/natural-compare/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
     integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
+  
+  nearley@^2.7.10:
+    version "2.19.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/nearley/-/nearley-2.19.0.tgz#37717781d0fd0f2bfc95e233ebd75678ca4bda46"
+    integrity sha1-N3F3gdD9Dyv8leIz69dWeMpL2kY=
+    dependencies:
+      commander "^2.19.0"
+      moo "^0.4.3"
+      railroad-diagrams "^1.0.0"
+      randexp "0.4.6"
+      semver "^5.4.1"
   
   negotiator@0.6.1:
     version "0.6.1"
@@ -4099,6 +4317,13 @@ Lockfile:
       gauge "~2.7.3"
       set-blocking "~2.0.0"
   
+  nth-check@~1.0.1:
+    version "1.0.2"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
+    integrity sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
+    dependencies:
+      boolbase "~1.0.0"
+  
   num2fraction@^1.2.2:
     version "1.2.2"
     resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
@@ -4120,12 +4345,17 @@ Lockfile:
     version "4.1.1"
     resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   
+  object-inspect@^1.6.0:
+    version "1.6.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/object-inspect/-/object-inspect-1.6.0.tgz#c70b6cbf72f274aab4c34c0c82f5167bf82cf15b"
+    integrity sha1-xwtsv3LydKq0w0wMgvUWe/gs8Vs=
+  
   object-is@^1.0.1:
     version "1.0.1"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/object-is/object-is-1.0.1.tgz#0aa60ec9989a0b3ed795cf4d06f62cf1ad6539b6"
     integrity sha1-CqYOyZiaCz7Xlc9NBvYs8a1lObY=
   
-  object-keys@^1.0.11, object-keys@^1.0.12:
+  object-keys@^1.0.11, object-keys@^1.0.12, object-keys@^1.1.1:
     version "1.1.1"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
     integrity sha1-HEfyct8nfzsdrwYWd9nILiMixg4=
@@ -4140,7 +4370,7 @@ Lockfile:
       has-symbols "^1.0.0"
       object-keys "^1.0.11"
   
-  object.entries@^1.1.0:
+  object.entries@^1.0.4, object.entries@^1.1.0:
     version "1.1.0"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/object.entries/-/object.entries-1.1.0.tgz#2024fc6d6ba246aee38bdb0ffd5cfbcf371b7519"
     integrity sha1-ICT8bWuiRq7ji9sP/Vz7zzcbdRk=
@@ -4149,6 +4379,16 @@ Lockfile:
       es-abstract "^1.12.0"
       function-bind "^1.1.1"
       has "^1.0.3"
+  
+  object.fromentries@^2.0.0:
+    version "2.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/object.fromentries/-/object.fromentries-2.0.0.tgz#49a543d92151f8277b3ac9600f1e930b189d30ab"
+    integrity sha1-SaVD2SFR+Cd7OslgDx6TCxidMKs=
+    dependencies:
+      define-properties "^1.1.2"
+      es-abstract "^1.11.0"
+      function-bind "^1.1.1"
+      has "^1.0.1"
   
   object.omit@^2.0.0:
     version "2.0.1"
@@ -4307,6 +4547,13 @@ Lockfile:
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/parse5/parse5-1.5.1.tgz#9b7f3b0de32be78dc2401b17573ccaf0f6f59d94"
     integrity sha1-m387DeMr543CQBsXVzzK8Pb1nZQ=
   
+  parse5@^3.0.1:
+    version "3.0.3"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
+    integrity sha1-BC95L/3TaFFVHPTp4Gazh0q0W1w=
+    dependencies:
+      "@types/node" "*"
+  
   parseurl@~1.3.1:
     version "1.3.1"
     resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.1.tgz#c8ab8c9223ba34888aa64a297b28853bec18da56"
@@ -4376,6 +4623,11 @@ Lockfile:
   performance-now@^0.2.0:
     version "0.2.0"
     resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
+  
+  performance-now@^2.1.0:
+    version "2.1.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/performance-now/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
+    integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
   
   pify@^2.0.0, pify@^2.3.0:
     version "2.3.0"
@@ -4807,6 +5059,33 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
   
+  raf@3.3.2:
+    version "3.3.2"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/raf/raf-3.3.2.tgz#0c13be0b5b49b46f76d6669248d527cf2b02fe27"
+    integrity sha1-DBO+C1tJtG921maSSNUnzysC/ic=
+    dependencies:
+      performance-now "^2.1.0"
+  
+  raf@^3.3.2:
+    version "3.4.1"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
+    integrity sha1-B0LpmkplUvRF1z4+4DKK8P8e3jk=
+    dependencies:
+      performance-now "^2.1.0"
+  
+  railroad-diagrams@^1.0.0:
+    version "1.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
+    integrity sha1-635iZ1SN3t+4mcG5Dlc3RVnN234=
+  
+  randexp@0.4.6:
+    version "0.4.6"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/randexp/-/randexp-0.4.6.tgz#e986ad5e5e31dae13ddd6f7b3019aa7c87f60ca3"
+    integrity sha1-6YatXl4x2uE93W97MBmqfIf2DKM=
+    dependencies:
+      discontinuous-range "1.0.0"
+      ret "~0.1.10"
+  
   randomatic@^1.1.3:
     version "1.1.7"
     resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -4944,6 +5223,14 @@ Lockfile:
       tiny-invariant "^1.0.2"
       tiny-warning "^1.0.0"
   
+  react-test-renderer@16.0.0:
+    version "16.0.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/react-test-renderer/-/react-test-renderer-16.0.0.tgz#9fe7b8308f2f71f29fc356d4102086f131c9cb15"
+    integrity sha1-n+e4MI8vcfKfw1bUECCG8THJyxU=
+    dependencies:
+      fbjs "^0.8.16"
+      object-assign "^4.1.1"
+  
   react@15.6.1:
     version "15.6.1"
     resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
@@ -4980,6 +5267,15 @@ Lockfile:
       safe-buffer "~5.1.1"
       string_decoder "~1.0.3"
       util-deprecate "~1.0.1"
+  
+  readable-stream@^3.1.1:
+    version "3.4.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/readable-stream/-/readable-stream-3.4.0.tgz#a51c26754658e0a3c21dbf59163bd45ba6f447fc"
+    integrity sha1-pRwmdUZY4KPCHb9ZFjvUW6b0R/w=
+    dependencies:
+      inherits "^2.0.3"
+      string_decoder "^1.1.1"
+      util-deprecate "^1.0.1"
   
   readdirp@^2.0.0:
     version "2.1.0"
@@ -5157,6 +5453,11 @@ Lockfile:
     dependencies:
       path-parse "^1.0.6"
   
+  ret@~0.1.10:
+    version "0.1.15"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
+    integrity sha1-uKSCXVvbH8P29Twrwz+BOIaBx7w=
+  
   right-align@^0.1.1:
     version "0.1.3"
     resolved "https://registry.yarnpkg.com/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
@@ -5176,9 +5477,22 @@ Lockfile:
       hash-base "^2.0.0"
       inherits "^2.0.1"
   
+  rst-selector-parser@^2.2.1:
+    version "2.2.3"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/rst-selector-parser/-/rst-selector-parser-2.2.3.tgz#81b230ea2fcc6066c89e3472de794285d9b03d91"
+    integrity sha1-gbIw6i/MYGbInjRy3nlChdmwPZE=
+    dependencies:
+      lodash.flattendeep "^4.4.0"
+      nearley "^2.7.10"
+  
   safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
     version "5.1.1"
     resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
+  
+  safe-buffer@~5.2.0:
+    version "5.2.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
+    integrity sha1-t02uxJsRSPiMZLaNSbHoFcHy9Rk=
   
   "safer-buffer@>= 2.1.2 < 3":
     version "2.1.2"
@@ -5248,7 +5562,7 @@ Lockfile:
     version "5.3.0"
     resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
   
-  semver@^5.5.0:
+  semver@^5.4.1, semver@^5.5.0, semver@^5.6.0:
     version "5.7.1"
     resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
     integrity sha1-qVT5Ma66UI0we78Gnv8MAclhFvc=
@@ -5520,9 +5834,32 @@ Lockfile:
       is-fullwidth-code-point "^1.0.0"
       strip-ansi "^3.0.0"
   
+  string.prototype.trimleft@^2.0.0:
+    version "2.1.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/string.prototype.trimleft/-/string.prototype.trimleft-2.1.0.tgz#6cc47f0d7eb8d62b0f3701611715a3954591d634"
+    integrity sha1-bMR/DX641isPNwFhFxWjlUWR1jQ=
+    dependencies:
+      define-properties "^1.1.3"
+      function-bind "^1.1.1"
+  
+  string.prototype.trimright@^2.0.0:
+    version "2.1.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/string.prototype.trimright/-/string.prototype.trimright-2.1.0.tgz#669d164be9df9b6f7559fa8e89945b168a5a6c58"
+    integrity sha1-Zp0WS+nfm291WfqOiZRbFopabFg=
+    dependencies:
+      define-properties "^1.1.3"
+      function-bind "^1.1.1"
+  
   string_decoder@^0.10.25:
     version "0.10.31"
     resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
+  
+  string_decoder@^1.1.1:
+    version "1.3.0"
+    resolved "http://wm-npm.mobimate.com:80/api/npm/wm-node/string_decoder/-/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
+    integrity sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4=
+    dependencies:
+      safe-buffer "~5.2.0"
   
   string_decoder@~1.0.3:
     version "1.0.3"
@@ -5828,7 +6165,7 @@ Lockfile:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/user-home/-/user-home-1.1.1.tgz#2b5be23a32b63a7c9deb8d0f28d485724a3df190"
   
-  util-deprecate@~1.0.1:
+  util-deprecate@^1.0.1, util-deprecate@~1.0.1:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   
