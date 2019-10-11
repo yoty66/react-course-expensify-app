@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/Avraham/.nvm/versions/node/v8.14.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add extract-text-webpack-plugin
+  /Users/Avraham/.nvm/versions/node/v8.14.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add express
 
 PATH: 
   /Users/Avraham/.nvm/versions/node/v8.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/Cellar/gradle-4.10/bin
@@ -14,17 +14,8 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: wm-npm.mobimate.com/extract-text-webpack-plugin: Invalid URI "wm-npm.mobimate.com/extract-text-webpack-plugin"
-      at Request.module.exports.Request.init (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140552:31)
-      at new Request (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140406:8)
-      at request (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:137312:10)
-      at RequestManager.execute (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66882:15)
-      at RequestManager.shiftQueue (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66920:10)
-      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66599:13
-      at new Promise (<anonymous>)
-      at new F (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:5296:28)
-      at RequestManager.request (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66597:19)
-      at NpmRegistry.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:31694:42)
+  Error: getaddrinfo ENOTFOUND wm-npm.mobimate.com wm-npm.mobimate.com:80
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
 
 npm manifest: 
   {
