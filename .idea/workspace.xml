@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="df396cc4-9e7d-4c14-a951-230cfd6933ce" name="Default Changelist" comment="Add Natali's expense">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExpenseListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExpenseListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/__snapshots__/EditExpensePage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/__snapshots__/EditExpensePage.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/__snapshots__/ExpenseListFilters.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/__snapshots__/ExpenseListFilters.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/__snapshots__/ExpenseListItem.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/__snapshots__/ExpenseListItem.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,11 +98,11 @@
         <counts>
           <entry key="babelrc" value="1" />
           <entry key="css" value="4" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="8" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="147" />
+          <entry key="js" value="150" />
           <entry key="json" value="13" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
@@ -118,9 +118,9 @@
           <entry key="HTML" value="8" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="147" />
+          <entry key="JavaScript" value="150" />
           <entry key="Jest Snapshot" value="14" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="6" />
           <entry key="SourceMap" value="1" />
@@ -130,9 +130,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="babelrc" value="38" />
-          <entry key="gitignore" value="117" />
+          <entry key="gitignore" value="121" />
           <entry key="html" value="107" />
-          <entry key="js" value="23942" />
+          <entry key="js" value="24088" />
           <entry key="json" value="360" />
           <entry key="scss" value="28" />
           <entry key="txt" value="51" />
@@ -142,8 +142,8 @@
         <counts>
           <entry key="HTML" value="107" />
           <entry key="JSON" value="398" />
-          <entry key="JavaScript" value="23942" />
-          <entry key="PLAIN_TEXT" value="168" />
+          <entry key="JavaScript" value="24088" />
+          <entry key="PLAIN_TEXT" value="172" />
           <entry key="SCSS" value="28" />
         </counts>
       </usages-collector>
@@ -152,19 +152,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
+        <entry file="file://$PROJECT_DIR$/src/components/ExpenseListItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="168">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -173,10 +164,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+        <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="188">
+              <caret line="14" column="102" selection-start-line="14" selection-start-column="102" selection-end-line="14" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,40 +178,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="120">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+        <entry file="file://$PROJECT_DIR$/src/test/components/ExpenseListItem.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/baby-sloth.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yarn.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1325">
-              <caret line="781" column="28" selection-start-line="781" selection-start-column="20" selection-end-line="781" selection-end-column="28" />
+            <state relative-caret-position="24">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -287,7 +258,6 @@
         <option value="$PROJECT_DIR$/src/playground/HOC.js" />
         <option value="$PROJECT_DIR$/src/components/ExpenseDashBoard.js" />
         <option value="$PROJECT_DIR$/src/components/ExoenseForm.js" />
-        <option value="$PROJECT_DIR$/src/components/ExpenseListItem.js" />
         <option value="$PROJECT_DIR$/src/store/configureStore.js" />
         <option value="$PROJECT_DIR$/src/test/add.test.js" />
         <option value="$PROJECT_DIR$/src/test/actions/expenses.test.js" />
@@ -320,10 +290,11 @@
         <option value="$PROJECT_DIR$/src/components/ExpenseListFilter.js" />
         <option value="$PROJECT_DIR$/src/test/components/ExpenseListFilters.test.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/components/ExpenseListItem.js" />
+        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -372,7 +343,26 @@
             <path>
               <item name="expensify-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="expensify-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expensify-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expensify-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expensify-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expensify-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expensify-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expensify-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,10 +371,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;favi&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/node_modules/react-dates/_gh-pages/favicon.ico&#10;Close All&#9;ACTION&#9;CloseAllEditors&#10;close all&#9;null&#9;null&#10;filte&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/reducers/filtersReducers.js&#10;filters&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/filters.js&#10;Edit&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/EditExpensePage.js&#10;ed&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/EditExpensePage.test.js&#10;Add&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/AddExpensePage.js&#10;Hea&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/Header.js&#10;E&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseForm.js&#10;expenses&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/selctors/expenses.js" />
+    <property name="SearchEverywhereHistoryKey" value="a&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;ExpenseL&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/ExpenseListItem.test.js&#10;ExpenseLis&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseListItem.js&#10;app&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;favi&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/node_modules/react-dates/_gh-pages/favicon.ico&#10;Close All&#9;ACTION&#9;CloseAllEditors&#10;close all&#9;null&#9;null&#10;filte&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/reducers/filtersReducers.js&#10;filters&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/filters.js&#10;Edit&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/EditExpensePage.js&#10;ed&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/EditExpensePage.test.js&#10;Add&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/AddExpensePage.js&#10;Hea&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/Header.js&#10;E&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseForm.js&#10;expenses&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/selctors/expenses.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570878537809" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570879897406" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -535,7 +525,7 @@
       <workItem from="1569230631507" duration="8332000" />
       <workItem from="1570193988095" duration="9472000" />
       <workItem from="1570456729145" duration="656000" />
-      <workItem from="1570610569621" duration="12595000" />
+      <workItem from="1570610569621" duration="14161000" />
     </task>
     <task id="LOCAL-00001" summary="css out">
       <created>1570793541205</created>
@@ -569,7 +559,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182791000" />
+    <option name="totallyTimeSpent" value="184357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,7 +574,7 @@
     <frame x="240" y="1080" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22478387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22478387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -599,7 +589,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32736573" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49760765" visible="true" weight="0.38618925" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49760765" visible="true" weight="0.38618925" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50239235" side_tool="true" weight="0.49769586" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -691,20 +681,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/components/__snapshots__/Header.test.js.snap">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ExpenseListItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/components/ExpenseListItem.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/components/__snapshots__/ExpenseListItem.test.js.snap">
       <provider selected="true" editor-type-id="text-editor">
@@ -916,42 +892,15 @@
     <entry file="file://$PROJECT_DIR$/node_modules/react-dates/_gh-pages/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/baby-sloth.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/yarn-error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1325">
-          <caret line="781" column="28" selection-start-line="781" selection-start-column="20" selection-end-line="781" selection-end-column="28" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -965,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -979,10 +921,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/baby-sloth.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1325">
+          <caret line="781" column="28" selection-start-line="781" selection-start-column="20" selection-end-line="781" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/ExpenseListItem.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ExpenseListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="14" column="102" selection-start-line="14" selection-start-column="102" selection-end-line="14" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

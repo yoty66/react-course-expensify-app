@@ -2,3 +2,4 @@ node_modules/
 *.xml
 public/dist
 yarn-error.log
+ .idea/workspace.xml
