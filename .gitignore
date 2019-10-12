@@ -1,4 +1,4 @@
 node_modules/
-.xml
+*.xml
 public/dist
 yarn-error.log
