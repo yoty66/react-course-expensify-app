@@ -1,6 +1,4 @@
 node_modules/
 .xml
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styled.css.map
+public/dist
+yarn-error.log
