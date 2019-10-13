@@ -6,7 +6,6 @@ import {getVisableExpenses} from '../selctors/expenses';
 export const ExpenseList = (props) =>
     (
       <div>
-          <h1>Expense list</h1>
           {
               props.expenses.length === 0
                   ? (<p>there are no items</p>)

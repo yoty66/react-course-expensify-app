@@ -2,9 +2,6 @@
 
 exports[`should render ExpenseList with default text when there are no items 1`] = `
 <div>
-  <h1>
-    Expense list
-  </h1>
   <p>
     there are no items
   </p>
@@ -13,9 +10,6 @@ exports[`should render ExpenseList with default text when there are no items 1`]
 
 exports[`should render ExpenseList with expenses 1`] = `
 <div>
-  <h1>
-    Expense list
-  </h1>
   <ExpenseListItem
     amount={195}
     createdAt={0}
