@@ -8,6 +8,7 @@ import 'normalize.css/normalize.css'
 import 'react-dates/lib/css/_datepicker.css';
 import {addExpense} from "./actions/expenses";
 import moment from 'moment';
+import './firebase/firebase';
 
 const store =configureStore ();
 // console.log(store.getState());

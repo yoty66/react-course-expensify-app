@@ -2,4 +2,6 @@ node_modules/
 *.xml
 public/dist
 yarn-error.log
- .idea/workspace.xml
+.idea/workspace.xml
+.env.test
+.env.development
