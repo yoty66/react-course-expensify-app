@@ -148,7 +148,7 @@
           <entry key="gitignore" value="151" />
           <entry key="html" value="107" />
           <entry key="js" value="28788" />
-          <entry key="json" value="422" />
+          <entry key="json" value="425" />
           <entry key="scss" value="28" />
           <entry key="test" value="13" />
           <entry key="txt" value="80" />
@@ -157,7 +157,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="107" />
-          <entry key="JSON" value="460" />
+          <entry key="JSON" value="463" />
           <entry key="JavaScript" value="28788" />
           <entry key="PLAIN_TEXT" value="450" />
           <entry key="SCSS" value="28" />
@@ -197,8 +197,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="147">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -288,6 +288,7 @@
       <find>fav</find>
       <find>conne</find>
       <find>Expense list</find>
+      <find>node-sass</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -392,11 +393,6 @@
             <path>
               <item name="expensify-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="expensify-app" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="expensify-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expensify-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -411,7 +407,7 @@
     <property name="SearchEverywhereHistoryKey" value="yarn&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/yarn.lock&#10;expe&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/expenses.js&#10;ex&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/actions/expenses.test.js&#10;expenses.t&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/__snapshots__/ExpensesDashBoard.test.js.snap&#10;Add&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/AddExpensePage.js&#10;adde&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/AddExpensePage.test.js&#10;store&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;a&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;ExpenseL&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/ExpenseListItem.test.js&#10;ExpenseLis&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseListItem.js&#10;favi&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/node_modules/react-dates/_gh-pages/favicon.ico&#10;Close All&#9;ACTION&#9;CloseAllEditors&#10;close all&#9;null&#9;null&#10;filte&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/reducers/filtersReducers.js&#10;filters&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/filters.js&#10;Edit&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/EditExpensePage.js&#10;ed&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/EditExpensePage.test.js&#10;Hea&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/Header.js&#10;E&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseForm.js&#10;expenses&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/selctors/expenses.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572689386736" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572689878937" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -570,7 +566,7 @@
       <workItem from="1571990484443" duration="4950000" />
       <workItem from="1572164110865" duration="951000" />
       <workItem from="1572190660158" duration="1153000" />
-      <workItem from="1572687310505" duration="1955000" />
+      <workItem from="1572687310505" duration="2479000" />
     </task>
     <task id="LOCAL-00001" summary="css out">
       <created>1570793541205</created>
@@ -628,11 +624,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572688998624</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Natali's expense">
+      <created>1572689417316</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572689417316</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add Natali's expense">
+      <created>1572689766531</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572689766531</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216601000" />
+    <option name="totallyTimeSpent" value="217125000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1013,8 +1023,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="147">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
         </state>
       </provider>
     </entry>
