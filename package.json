@@ -1,7 +1,8 @@
 {
-  "name": "expensify",
+   "name": "expensify-123123",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "author": "Andrew Mead",
   "license": "MIT",
   "scripts": {
@@ -52,5 +53,8 @@
     "jest": "20.0.4",
     "react-test-renderer": "15.6.1",
     "webpack-dev-server": "2.5.1"
+  },
+  "engines": {
+    "node": "10.0.0"
   }
 }
