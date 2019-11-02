@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df396cc4-9e7d-4c14-a951-230cfd6933ce" name="Default Changelist" comment="Add Natali's expense">
+    <list default="true" id="df396cc4-9e7d-4c14-a951-230cfd6933ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -148,7 +148,7 @@
           <entry key="gitignore" value="151" />
           <entry key="html" value="107" />
           <entry key="js" value="28788" />
-          <entry key="json" value="421" />
+          <entry key="json" value="422" />
           <entry key="scss" value="28" />
           <entry key="test" value="13" />
           <entry key="txt" value="80" />
@@ -157,7 +157,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="107" />
-          <entry key="JSON" value="459" />
+          <entry key="JSON" value="460" />
           <entry key="JavaScript" value="28788" />
           <entry key="PLAIN_TEXT" value="450" />
           <entry key="SCSS" value="28" />
@@ -197,15 +197,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yarn.lock">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -416,7 +411,7 @@
     <property name="SearchEverywhereHistoryKey" value="yarn&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/yarn.lock&#10;expe&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/expenses.js&#10;ex&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/actions/expenses.test.js&#10;expenses.t&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/__snapshots__/ExpensesDashBoard.test.js.snap&#10;Add&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/AddExpensePage.js&#10;adde&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/AddExpensePage.test.js&#10;store&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;a&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;ExpenseL&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/ExpenseListItem.test.js&#10;ExpenseLis&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseListItem.js&#10;favi&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/node_modules/react-dates/_gh-pages/favicon.ico&#10;Close All&#9;ACTION&#9;CloseAllEditors&#10;close all&#9;null&#9;null&#10;filte&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/reducers/filtersReducers.js&#10;filters&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/filters.js&#10;Edit&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/EditExpensePage.js&#10;ed&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/EditExpensePage.test.js&#10;Hea&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/Header.js&#10;E&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseForm.js&#10;expenses&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/selctors/expenses.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572688883744" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572689386736" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -575,7 +570,7 @@
       <workItem from="1571990484443" duration="4950000" />
       <workItem from="1572164110865" duration="951000" />
       <workItem from="1572190660158" duration="1153000" />
-      <workItem from="1572687310505" duration="1578000" />
+      <workItem from="1572687310505" duration="1955000" />
     </task>
     <task id="LOCAL-00001" summary="css out">
       <created>1570793541205</created>
@@ -619,11 +614,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572091462278</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Natali's expense">
+      <created>1572688953857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572688953857</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Natali's expense">
+      <created>1572688998624</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572688998624</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216224000" />
+    <option name="totallyTimeSpent" value="216601000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -636,6 +645,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976744" visible="true" weight="0.34236112" />
       <window_info id="Structure" order="1" sideWeight="0.5023256" side_tool="true" weight="0.35518733" />
@@ -1003,8 +1013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
         </state>
       </provider>
     </entry>
