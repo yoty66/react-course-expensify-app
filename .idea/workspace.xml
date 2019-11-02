@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df396cc4-9e7d-4c14-a951-230cfd6933ce" name="Default Changelist" comment="Add Natali's expense">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,7 +117,7 @@
           <entry key="jpg" value="3" />
           <entry key="js" value="185" />
           <entry key="json" value="19" />
-          <entry key="lock" value="4" />
+          <entry key="lock" value="5" />
           <entry key="log" value="1" />
           <entry key="map" value="1" />
           <entry key="rnc" value="1" />
@@ -137,7 +138,7 @@
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="6" />
           <entry key="SourceMap" value="1" />
-          <entry key="yarn.lock" value="4" />
+          <entry key="yarn.lock" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -196,10 +197,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="187">
+              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -407,10 +413,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="expe&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/expenses.js&#10;ex&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/actions/expenses.test.js&#10;expenses.t&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/__snapshots__/ExpensesDashBoard.test.js.snap&#10;Add&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/AddExpensePage.js&#10;adde&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/AddExpensePage.test.js&#10;store&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;a&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;ExpenseL&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/ExpenseListItem.test.js&#10;ExpenseLis&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseListItem.js&#10;favi&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/node_modules/react-dates/_gh-pages/favicon.ico&#10;Close All&#9;ACTION&#9;CloseAllEditors&#10;close all&#9;null&#9;null&#10;filte&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/reducers/filtersReducers.js&#10;filters&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/filters.js&#10;Edit&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/EditExpensePage.js&#10;ed&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/EditExpensePage.test.js&#10;Hea&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/Header.js&#10;E&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseForm.js&#10;expenses&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/selctors/expenses.js" />
+    <property name="SearchEverywhereHistoryKey" value="yarn&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/yarn.lock&#10;expe&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/expenses.js&#10;ex&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/actions/expenses.test.js&#10;expenses.t&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/__snapshots__/ExpensesDashBoard.test.js.snap&#10;Add&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/AddExpensePage.js&#10;adde&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/AddExpensePage.test.js&#10;store&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;a&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/app.js&#10;ExpenseL&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/ExpenseListItem.test.js&#10;ExpenseLis&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseListItem.js&#10;favi&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/node_modules/react-dates/_gh-pages/favicon.ico&#10;Close All&#9;ACTION&#9;CloseAllEditors&#10;close all&#9;null&#9;null&#10;filte&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/reducers/filtersReducers.js&#10;filters&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/actions/filters.js&#10;Edit&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/EditExpensePage.js&#10;ed&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/test/components/EditExpensePage.test.js&#10;Hea&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/Header.js&#10;E&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/components/ExpenseForm.js&#10;expenses&#9;FILE&#9;file:///Users/Avraham/courses/react-course-projects/expensify-app/src/selctors/expenses.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572091543072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572688883744" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -569,7 +575,7 @@
       <workItem from="1571990484443" duration="4950000" />
       <workItem from="1572164110865" duration="951000" />
       <workItem from="1572190660158" duration="1153000" />
-      <workItem from="1572687310505" duration="533000" />
+      <workItem from="1572687310505" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="css out">
       <created>1570793541205</created>
@@ -617,7 +623,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215179000" />
+    <option name="totallyTimeSpent" value="216224000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -646,7 +652,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32736573" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4963977" visible="true" weight="0.6782178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4963977" visible="true" weight="0.5420792" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5036023" side_tool="true" weight="0.26214835" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -937,7 +943,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock" />
     <entry file="file://$PROJECT_DIR$/src/actions/expenses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -993,10 +998,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="187">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
         </state>
       </provider>
     </entry>
