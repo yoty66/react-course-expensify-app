@@ -6,6 +6,16 @@ import thunk from 'redux-thunk';
 
 const createMockStore = configureMockStore([thunk]);
 
+beforeEach(()=>{
+    const expensesData={};
+    expenses.forEach(({id, ...restProps})=>{
+        expensesData[id] = {...restProps};
+    });
+    database.ref('expenses').set(expensesData).then(()=> done())
+    }
+
+);
+
 test('should setup remove expense action object',
     () => {
     const action = removeExpense({id: '123abc'});
