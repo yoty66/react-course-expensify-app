@@ -1,5 +1,6 @@
 import expensesReducer from '../../reducers/expensesReducers';
 import expenses from '../fixturs/expenses'
+import {setExpenses} from "../../actions/expenses";
 
 test ('should set default state ', () => {
     const state = expensesReducer(undefined, {type:'@@INIT'});
@@ -30,5 +31,12 @@ test ('should edit expense  ', () => {
 test ('should not edit expense if id doesn\'t exists' , () => {
     const state = expensesReducer(expenses, {type:'EDIT_EXPENSE',id: -2, edit: {...expenses[2]}});
     expect(state).toEqual(expenses);
+});
+
+test('should  set expenses ', ()=>{
+    const state = expensesReducer(expenses, {type:'SET_EXPENSES', expenses:expenses[0]});
+    expect(state).toEqual(
+        expenses[0]
+    );
 });
 
