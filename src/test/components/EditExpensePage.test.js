@@ -23,6 +23,7 @@ test('should render EditExpensePage correctly', () => {
 test('should handle removeExpense', () => {
     wrapper.find('button').prop('onClick')();
     expect(removeExpense).toHaveBeenCalledWith(expenses[1]);
+    expect(removeExpense).toHaveBeenCalledWith(expenses[1]);
     expect(history.push).toHaveBeenLastCalledWith('/');
 });
 

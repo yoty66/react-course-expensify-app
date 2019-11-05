@@ -1,11 +1,12 @@
-import uuid from "uuid";
 import database from '../firebase/firebase'
+import expenses from '../test/fixturs/expenses'
+
 //AddEXPENSE
 export const addExpense = (
     expense)=> ({
     type: 'ADD_EXPENSE',
     expense });
-
+//startAddExpense
 export const startAddExpense = ( expenseData = {} ) => (dispatch)=>{
     const {
         description = '',
@@ -24,11 +25,21 @@ export const startAddExpense = ( expenseData = {} ) => (dispatch)=>{
     )
 };
 
+
+//removeExpense
 export const removeExpense = ({id})=>
     ({
         type:'REMOVE_EXPENSE',
         id
     });
+
+
+//startRemoveExpense
+export const startRemoveExpense = ({ id }) => (dispatch) => {
+    return database.ref(`expenses/${id}`).remove().then(()=>{
+        dispatch(removeExpense({id}));
+    });
+};
 
 //editExpense
 export const editExpense = (id ,edit)=>
@@ -38,6 +49,14 @@ export const editExpense = (id ,edit)=>
         edit
     });
 
+//startEditExpense
+
+export const startEditExpense = (id, edit) =>( dispatch )=> {
+return database.ref(`expenses/${id}`).update(edit).then(()=>{
+    dispatch(editExpense(id,edit));
+});
+};
+
 // SET_EXPENSES
 
 export const setExpenses = ( expenses ) =>({
@@ -46,7 +65,7 @@ export const setExpenses = ( expenses ) =>({
 
 });
 
-// export const startSetExpenses;
+// startSetExpenses;
 
 export const startSetExpenses =()=>(dispatch)=>{
     return database.ref('expenses').once('value').then((snapshot) =>{
@@ -55,7 +74,7 @@ export const startSetExpenses =()=>(dispatch)=>{
             expenses.push({
                 id: childSnapshot.key,
                 ...childSnapshot.val()
-            });
+            })
 
         });
 
