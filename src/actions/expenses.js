@@ -1,13 +1,15 @@
 import database from '../firebase/firebase'
 import expenses from '../test/fixturs/expenses'
 
+
 //AddEXPENSE
 export const addExpense = (
     expense)=> ({
     type: 'ADD_EXPENSE',
     expense });
 //startAddExpense
-export const startAddExpense = ( expenseData = {} ) => (dispatch)=>{
+export const startAddExpense = ( expenseData = {} ) => (dispatch, getState)=>{
+    const uid = getState().auth.uid;
     const {
         description = '',
         note = '' ,
@@ -20,8 +22,10 @@ export const startAddExpense = ( expenseData = {} ) => (dispatch)=>{
             amount ,
             createdAt ,
         };
-    return database.ref('expenses').push(expense).then(
-        (ref)=> dispatch(addExpense({id:ref.key, ...expense}))
+    return database.ref(`users/${uid}/expenses`).push(expense).then(
+
+        (ref)=> {dispatch(addExpense({id:ref.key, ...expense}))
+            console.log('got here');}
     )
 };
 
@@ -35,8 +39,9 @@ export const removeExpense = ({id})=>
 
 
 //startRemoveExpense
-export const startRemoveExpense = ({ id }) => (dispatch) => {
-    return database.ref(`expenses/${id}`).remove().then(()=>{
+export const startRemoveExpense = ({ id }) => (dispatch, getState) => {
+    const uid = getState().auth.uid
+    return database.ref(`users/${uid}/expenses/${id}`).remove().then(()=>{
         dispatch(removeExpense({id}));
     });
 };
@@ -67,8 +72,9 @@ export const setExpenses = ( expenses ) =>({
 
 // startSetExpenses;
 
-export const startSetExpenses =()=>(dispatch)=>{
-    return database.ref('expenses').once('value').then((snapshot) =>{
+export const startSetExpenses =()=>(dispatch, getState)=>{
+    const uid= getState().auth.uid;
+    return database.ref(`users/${uid}/expenses`).once('value').then((snapshot) =>{
         const expenses = [];
         snapshot.forEach((childSnapshot)=>{
             expenses.push({
