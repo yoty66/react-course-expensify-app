@@ -45,7 +45,7 @@ test('should setup edit expense action object',
     }
     );
 test('should edit expense ',( done )=>{
-    const store= configureMockStore();
+    const store= createMockStore();
     const {id1,...otherdata1} = expenses[1];
     const id = expenses[0].id;
     store.dispatch(startEditExpense(id, otherdata1)).then(()=>{
