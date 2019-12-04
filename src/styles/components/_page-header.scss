@@ -1,0 +1,19 @@
+.page-header{
+  background: $off-white;
+  padding: $l-size 0 ;
+  margin-buttom: $l-size ;
+}
+
+.page-header__actions{
+  margin: 0 auto;
+  margin-top: $m-size;
+  max-width: 80rem;
+}
+
+.page-header__title{
+  font-weight: 300;
+  margin: 0;
+  span{
+    font-weight: 700;
+  }
+}

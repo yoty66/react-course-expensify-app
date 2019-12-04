@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display two expenses correctly  1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        2
+      </span>
+       
+      expenses 
+       totaling 
+      <span>
+        ₪94.34
+      </span>
+    </h1>
+  </div>
+  <div
+    className="page-header__actions"
+  >
+    <Link
+      className="button"
+      to="/create"
+    >
+      Add Expense
+    </Link>
+  </div>
+</div>
+`;
+
+exports[`should display two expenses correctly  2`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense 
+       totaling 
+      <span>
+        ₪94.34
+      </span>
+    </h1>
+  </div>
+  <div
+    className="page-header__actions"
+  >
+    <Link
+      className="button"
+      to="/create"
+    >
+      Add Expense
+    </Link>
+  </div>
+</div>
+`;
